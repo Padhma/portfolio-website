@@ -589,3 +589,14 @@
   motion.addEventListener("change", play);
   document.addEventListener("visibilitychange", function () { if (document.hidden) stop(); else play(); });
 })();
+
+(() => {
+  const emailLink = document.querySelector('[data-email-link]');
+  if (!emailLink) return;
+
+  const user = 'padhma';
+  const domain = 'umich.edu';
+  const address = `${user}@${domain}`;
+
+  emailLink.setAttribute('href', `mailto:${address}`);
+})();
