@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://padhma.github.io/sitemap.xml
